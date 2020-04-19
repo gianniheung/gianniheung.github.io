@@ -7,6 +7,11 @@ body {
   position: relative;
 }
 
+h1{
+  margin-left: 40px;
+  font-size:  25px;
+  color:#0c413f;
+}
 #gallery {
   display: grid;
   height: calc(100vh - 10px);
