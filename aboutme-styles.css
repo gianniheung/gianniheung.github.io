@@ -1,0 +1,48 @@
+/*about me*/
+.aboutme-two-column-wrapper {
+  display: grid;
+  grid-template-columns: 1fr  1fr;
+}
+.aboutme-image-wrapper img {
+
+}
+.aboutme-content-wrapper2{
+
+}
+.aboutme-content-text h{
+  color: white;
+  text-align: center;
+  font-size: 3em;
+}
+
+.aboutme-content-text p{
+  color: white;
+  text-align: center;
+  font-size: 2em;
+}
+.aboutme-content-text a{
+  color: white;
+  text-align: center;
+  font-size: 2em;
+}
+.aboutme-content-wrapper1 {
+
+  background-color: black;
+  height: 800px;
+}
+.aboutme-content-text{
+
+}
+.aboutme-content-text{
+
+}
+.aboutme-content-wrapper h1 {
+  color: lightseagreen;
+}
+.aboutme-img-background {
+   background: url("images/about/sunbyte_me_small.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}

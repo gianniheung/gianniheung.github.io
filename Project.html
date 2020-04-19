@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <title>Project</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+
+  <body>
+    <div class="container">
+      <div class="nav-wrapper">
+        <div class="left-side">
+
+          <div class="nav-link-wrapper">
+            <a href="Home.html">Home</a>
+          </div>
+          <div class="nav-link-wrapper active-nav-link">
+            <a href="Project.html">Project</a>
+          </div>
+          <div class="nav-link-wrapper">
+            <a href="Photo.html">Photography</a>
+          </div>
+          <div class="nav-link-wrapper">
+            <a href="Design.html">Design</a>
+          </div>
+
+        </div>
+        <div class="right-side">
+          <div class="brand">
+            Gianni Heung
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="content-wrapper">
+      <div class="portfolio-items-wrapper">
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/logos/sunbyte_background.jpg)"></div>
+            <div class="img-text-wrapper">
+                <a href="project_sunbyte.html">
+                    <div class="logo-wrapper">
+                        <img src="images/logos/sunbyte_logo.png" alt="">
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/logos/imust_background.jpg)"></div>
+          <div class="img-text-wrapper">
+              <a href="project_imust.html">
+                <div class="logo-wrapper">
+                  <img src="images/logos/imust_logo.png" alt="">
+                </div>
+              </a>
+            </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/logos/ships_background.jpg)"></div>
+          <div class="img-text-wrapper">
+              <a href="project_ship.html">
+                <div class="logo-wrapper">
+                  <img src="images/logos/ships_logo.png" alt="">
+                </div>
+              </a>
+            </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/logos/tamplus_backgroud.JPG)"></div>
+          <div class="img-text-wrapper">
+              <a href="project_tamplus.html">
+                <div class="logo-wrapper">
+                  <img src="images/logos/tamplus_logo.PNG" alt="">
+                </div>
+              </a>
+            </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<script>
+  const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+
+  portfolioItems.forEach(portfolioItem => {
+    portfolioItem.addEventListener('mouseover', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.add('image-blur');
+    });
+
+    portfolioItem.addEventListener('mouseout', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.remove('image-blur');
+    });
+  });
+
+</script>
+
+</html>

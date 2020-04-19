@@ -1,0 +1,62 @@
+/*about me*/
+.aboutme-two-column-wrapper {
+  display: grid;
+  grid-template-columns: 1fr  1fr;
+}
+.aboutme-image-wrapper img {
+
+}
+.aboutme-content-wrapper2{
+
+}
+.aboutme-content-text h{
+  color: white;
+  text-align: center;
+  font-size: 3em;
+}
+
+.aboutme-content-text p{
+  color: white;
+  text-align: center;
+  font-size: 2em;
+}
+.aboutme-content-text a{
+  color: white;
+  text-align: center;
+  font-size: 2em;
+}
+.aboutme-content-wrapper1 {
+
+  background-color: black;
+  height: 800px;
+}
+.aboutme-content-text{
+
+}
+.aboutme-content-text{
+
+}
+.aboutme-content-wrapper h1 {
+  color: lightseagreen;
+}
+
+
+
+.box_abs {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   max-width:1920px;
+   max-height:1080px;
+
+ }
+ .overlay {
+   position: absolute;
+   width: 100%;
+
+ }
+ .backgound-me-point{
+   position: absolute;
+   width: 100%;
+
+ }
