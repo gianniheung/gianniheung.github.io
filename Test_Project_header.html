@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <title>Project</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+
+  <body>
+    <div class="container">
+      <div class="nav-wrapper">
+        <div class="left-side">
+
+          <div class="nav-link-wrapper">
+            <a href="Home.html">Home</a>
+          </div>
+          <div class="nav-link-wrapper active-nav-link">
+            <a href="Project.html">Project</a>
+          </div>
+          <div class="nav-link-wrapper">
+            <a href="Photo.html">Photography</a>
+          </div>
+          <div class="nav-link-wrapper">
+            <a href="Design.html">Design</a>
+          </div>
+
+        </div>
+        <div class="right-side">
+          <div class="brand">
+            Gianni Heung
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="content-wrapper">
+      <div class="portfolio-items-wrapper">
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/logos/sunbyte_background.jpg)"></div>
+            <div class="img-text-wrapper">
+                <a href="project_sunbyte.html">
+                    <div class="logo-wrapper">
+                        <img src="images/logos/sunbyte_logo.png" alt="">
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/logos/imust_background.jpg)"></div>
+          <div class="img-text-wrapper">
+              <a href="project_imust.html">
+                <div class="logo-wrapper">
+                  <img src="images/logos/imust_logo.png" alt="">
+                </div>
+              </a>
+            </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/logos/ships_background.jpg)"></div>
+          <div class="img-text-wrapper">
+              <a href="project_ship.html">
+                <div class="logo-wrapper">
+                  <img src="images/logos/ships_logo.png" alt="">
+                </div>
+              </a>
+            </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/logos/tamplus_backgroud.jpg)"></div>
+          <div class="img-text-wrapper">
+              <a href="project_tamplus.html">
+                <div class="logo-wrapper">
+                  <img src="images/logos/tamplus_logo.png" alt="">
+                </div>
+              </a>
+            </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+<!-- Footer -->
+<footer class="page-footer font-small cyan darken-3">
+
+  <!-- Footer Elements -->
+  <div class="container">
+
+    <!-- Grid row-->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-12 py-5">
+        <div class="mb-5 flex-center">
+
+          <!-- Facebook -->
+          <a class="fb-ic">
+            <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!-- Twitter -->
+          <a class="tw-ic">
+            <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!-- Google +-->
+          <a class="gplus-ic">
+            <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!--Linkedin -->
+          <a class="li-ic">
+            <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!--Instagram-->
+          <a class="ins-ic">
+            <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!--Pinterest-->
+          <a class="pin-ic">
+            <i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
+          </a>
+        </div>
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row-->
+
+  </div>
+  <!-- Footer Elements -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+Buttons
+
+<script>
+  const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+
+  portfolioItems.forEach(portfolioItem => {
+    portfolioItem.addEventListener('mouseover', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.add('image-blur');
+    });
+
+    portfolioItem.addEventListener('mouseout', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.remove('image-blur');
+    });
+  });
+
+</script>
+
+</html>

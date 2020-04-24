@@ -1,0 +1,34 @@
+
+.aboutme-two-column-wrapper {
+  display: grid;
+  grid-template-columns:  1fr 1fr;
+}
+
+.footer-container
+{
+  background-color:lightseagreen;
+}
+
+.copyright,  .impressum
+{
+  text-align: center;
+}
+
+.logo
+{
+  height: 8vh;
+}
+
+@media (max-width: 768px)
+{
+  li
+  {
+    margin-left: 0;
+    margin-bottom: 1vh;
+  }
+
+  .sozial
+  {
+    margin-bottom: 1vh;
+  }
+}
