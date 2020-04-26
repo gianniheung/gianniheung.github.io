@@ -1,0 +1,57 @@
+/*footer*/
+#footer {
+position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 35px;
+  background-color:  #136c68;
+  bottom: 0;
+  margin-top: -35px;
+}
+
+
+
+.footer-my-intro-icon{
+display: grid;
+grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+padding-right: 50px;
+padding-bottom: 5px;
+padding-left: 50px;
+padding-top: 5px;
+}
+
+.footer-my-intro-icon> .contact-link > a > img {
+  filter: invert(80%);
+  width:13px;
+}
+
+.footer-my-intro-icon> .contact-link{
+  padding: 2px 0;
+}
+
+
+.footer-my-intro-icon> .contact-link :link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+
+}
+
+
+.footer-my-intro-icon> .contact-link :visited {
+  color: #e6e6e6;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+
+.footer-my-intro-icon> .contact-link :hover {
+  color: #b3e6c9;
+  background-color: transparent;
+}
+
+.footer-my-intro-icon> .contact-link :active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
